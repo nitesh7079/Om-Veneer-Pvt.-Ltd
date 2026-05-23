@@ -41,7 +41,7 @@ function ProductsPage() {
       <section className="bg-navy pt-32 pb-24 text-white">
         <div className="max-w-7xl mx-auto px-5 md:px-10 text-center">
           <p className="text-sm font-bold uppercase tracking-widest text-orange mb-4">Our Products</p>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold font-heading mb-6 max-w-4xl mx-auto">
             Raw Materials for Plywood Excellence.
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
@@ -67,7 +67,7 @@ function ProductsPage() {
               className="modern-card group flex flex-col h-full"
             >
               <Link to={`/product/${toProductSlug(product.name)}`} className="block flex-1 flex flex-col">
-                <div className="relative h-60 overflow-hidden bg-gray-100">
+                <div className="relative h-60 overflow-hidden bg-luxury-bg">
                   <img 
                     src={product.image} 
                     alt={product.name} 
@@ -76,7 +76,7 @@ function ProductsPage() {
                   <div className="absolute inset-0 bg-navy/10 group-hover:bg-transparent transition-colors"></div>
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
-                  <h2 className="text-2xl font-extrabold text-navy mb-3">{product.name}</h2>
+                  <h2 className="text-2xl font-bold font-heading text-navy mb-3">{product.name}</h2>
                   <p className="text-text-main leading-relaxed flex-1">{product.description}</p>
                   
                   <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
@@ -122,7 +122,7 @@ function ProductsPage() {
             </span>
           </div>
           
-          <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-8 drop-shadow-2xl leading-tight">
+          <h2 className="text-5xl md:text-7xl font-bold font-heading text-white mb-8 drop-shadow-2xl leading-tight">
             Can't find what <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange to-yellow-400">you need?</span>
           </h2>

@@ -17,7 +17,7 @@ const InputField = ({ label, type = "text", name, value, onChange, required, pla
       required={required}
       placeholder={placeholder}
       maxLength={maxLength}
-      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+      className="w-full px-4 py-3 bg-luxury-bg border border-gray-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
     />
     {hint && <p className="text-xs text-gray-500 mt-1.5 ml-1">{hint}</p>}
   </div>
@@ -78,7 +78,7 @@ const CompanyCreate = () => {
 
   if (user?.role !== 'admin') {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-luxury-bg">
         <Navbar />
         <div className="container mx-auto px-4 py-12 flex justify-center">
           <div className="bg-red-50 border border-red-200 text-red-700 px-6 py-5 rounded-2xl max-w-xl text-center shadow-sm">
@@ -97,7 +97,7 @@ const CompanyCreate = () => {
       <div className="container mx-auto px-4 sm:px-6 py-10 max-w-5xl animate-fade-in-up">
         {/* Header */}
         <div className="mb-10 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 mb-3 tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-bold font-heading text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 mb-3 tracking-tight">
             Create New Company
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl">
@@ -127,7 +127,7 @@ const CompanyCreate = () => {
                   <h2 className="text-2xl font-bold text-gray-800">Basic Details</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
-                  <InputField label="Company Name" name="name" value={formData.name} onChange={handleChange} required placeholder="Om Veneer Udhyog" />
+                  <InputField label="Company Name" name="name" value={formData.name} onChange={handleChange} required placeholder="Om Veneer Pvt. Ltd." />
                   <InputField label="Email Address" type="email" name="email" value={formData.email} onChange={handleChange} placeholder="contact@company.com" />
                   <InputField label="Phone Number" name="phone" value={formData.phone} onChange={handleChange} placeholder="+91 xxxxx xxxxx" />
                   <div>
@@ -137,7 +137,7 @@ const CompanyCreate = () => {
                         name="currency"
                         value={formData.currency}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none font-medium text-gray-700"
+                        className="w-full px-4 py-3 bg-luxury-bg border border-gray-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none font-medium text-gray-700"
                       >
                         <option value="INR">🇮🇳 INR (₹)</option>
                         <option value="USD">🇺🇸 USD ($)</option>
@@ -188,7 +188,7 @@ const CompanyCreate = () => {
                   <InputField label="PAN Number" name="pan" value={formData.pan} onChange={handleChange} placeholder="AAAAA0000A" maxLength="10" hint="Format: 10 characters (e.g., AAAAA0000A)" />
                 </div>
                 
-                <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100/80">
+                <div className="bg-luxury-bg rounded-2xl p-6 border border-gray-100/80">
                   <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-5">Financial Period</h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <InputField label="Fin. Year Start" type="date" name="financialYear.startDate" value={formData.financialYear.startDate} onChange={handleChange} required />
@@ -201,7 +201,7 @@ const CompanyCreate = () => {
             </div>
 
             {/* Actions Footer */}
-            <div className="bg-gray-50/50 border-t border-gray-100 px-8 py-6 flex flex-col sm:flex-row-reverse items-center gap-4">
+            <div className="bg-luxury-bg/50 border-t border-gray-100 px-8 py-6 flex flex-col sm:flex-row-reverse items-center gap-4">
               <button
                 type="submit"
                 disabled={loading}
@@ -225,7 +225,7 @@ const CompanyCreate = () => {
               <button
                 type="button"
                 onClick={() => navigate('/companies')}
-                className="w-full sm:w-auto px-6 py-3.5 bg-white text-gray-700 font-semibold rounded-xl border border-gray-200 hover:bg-gray-50 hover:border-gray-300 transition-all duration-200"
+                className="w-full sm:w-auto px-6 py-3.5 bg-white text-gray-700 font-semibold rounded-xl border border-gray-200 hover:bg-luxury-bg hover:border-gray-300 transition-all duration-200"
               >
                 Cancel Process
               </button>

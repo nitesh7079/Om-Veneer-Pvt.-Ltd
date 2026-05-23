@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --navy: #0A192F;
-  --navy-light: #112240;
-  --navy-lighter: #233554;
-  --orange: #FF6B35;
-  --orange-light: #FF8C61;
+  --navy: #281e18;
+  --navy-light: #3a2c22;
+  --navy-lighter: #4c3a2d;
+  --orange: #B68D53;
+  --orange-light: #C9A268;
   --white: #FFFFFF;
   --gray-100: #F8FAFC;
   --gray-200: #E2E8F0;
@@ -72,7 +72,12 @@ svg {
 }
 
 /* Base Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -80,8 +85,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Infinite Marquee Animation */
 @keyframes marqueeScroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee-scroll {
@@ -97,8 +107,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Continuous Random Blinking Animation */
 @keyframes randomBlink {
-  0%, 100% { opacity: 0; transform: scale(0.9); }
-  40%, 60% { opacity: 1; transform: scale(1); }
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  40%,
+  60% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .animate-random-blink {
@@ -112,10 +132,13 @@ h1, h2, h3, h4, h5, h6 {
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Custom Buttons */
@@ -133,13 +156,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.875rem 2rem;
   border-radius: 0.25rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 14px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 14px rgba(182, 141, 83, 0.3);
 }
 
 .btn-primary:hover {
   background-color: var(--orange-light);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 6px 20px rgba(182, 141, 83, 0.4);
 }
 
 .btn-secondary {
@@ -191,7 +214,9 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 
-.diagonal-bg h2, .diagonal-bg h3, .diagonal-bg p {
+.diagonal-bg h2,
+.diagonal-bg h3,
+.diagonal-bg p {
   color: var(--white);
 }
 
@@ -295,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Gradient text for ERP */
 .gradient-text {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #06b6d4 100%);
+  background: linear-gradient(135deg, #281e18 0%, #3a2c22 50%, #B68D53 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -303,14 +328,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Button effects */
 .btn-gradient {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #281e18 0%, #3a2c22 100%);
   transition: all 0.3s ease;
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #1f1712 0%, #281e18 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(30, 64, 175, 0.4);
+  box-shadow: 0 10px 25px rgba(40, 30, 24, 0.4);
 }
 
 /* Professional Table Styles */
@@ -320,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .professional-table thead {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #281e18 0%, #3a2c22 100%);
 }
 
 .professional-table thead th {
@@ -351,13 +376,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .professional-input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #3a2c22;
+  box-shadow: 0 0 0 3px rgba(58, 44, 34, 0.1);
 }
 
 /* Card with border accent */
 .card-accent {
-  border-top: 4px solid #3b82f6;
+  border-top: 4px solid #B68D53;
 }
 
 /* Professional Badge */
@@ -395,4 +420,3 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
   background-size: 1000px 100%;
 }
-

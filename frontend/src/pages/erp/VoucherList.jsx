@@ -77,20 +77,20 @@ const VoucherList = () => {
                 <Link to="/vouchers/payment" className="block px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 text-gray-800 transition-all duration-200 border-b border-gray-100">
                   <span className="font-bold text-blue-600">F5:</span> <span className="font-semibold">Payment</span>
                 </Link>
-                <Link to="/vouchers/receipt" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">
+                <Link to="/vouchers/receipt" className="block px-4 py-2 hover:bg-luxury-bg text-gray-800">
                   <span className="font-semibold">F6:</span> Receipt
                 </Link>
-                <Link to="/vouchers/journal" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">
+                <Link to="/vouchers/journal" className="block px-4 py-2 hover:bg-luxury-bg text-gray-800">
                   <span className="font-semibold">F7:</span> Journal
                 </Link>
-                <Link to="/vouchers/sales" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">
+                <Link to="/vouchers/sales" className="block px-4 py-2 hover:bg-luxury-bg text-gray-800">
                   <span className="font-semibold">F8:</span> Sales
                 </Link>
-                <Link to="/vouchers/purchase" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">
+                <Link to="/vouchers/purchase" className="block px-4 py-2 hover:bg-luxury-bg text-gray-800">
                   <span className="font-semibold">F9:</span> Purchase
                 </Link>
                 <div className="border-t border-gray-200"></div>
-                <Link to="/vouchers/create" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">
+                <Link to="/vouchers/create" className="block px-4 py-2 hover:bg-luxury-bg text-gray-800">
                   Other Vouchers
                 </Link>
               </div>

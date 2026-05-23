@@ -61,7 +61,7 @@ const VoucherView = () => {
           </div>
           <button
             onClick={() => navigate('/vouchers')}
-            className="mt-4 bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600"
+            className="mt-4 bg-luxury-bg0 text-white px-6 py-2 rounded hover:bg-gray-600"
           >
             Back to Vouchers
           </button>
@@ -91,7 +91,7 @@ const VoucherView = () => {
             </button>
             <button
               onClick={() => navigate('/vouchers')}
-              className="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600"
+              className="bg-luxury-bg0 text-white px-6 py-2 rounded hover:bg-gray-600"
             >
               Back
             </button>
@@ -138,7 +138,7 @@ const VoucherView = () => {
             <h3 className="text-xl font-semibold mb-4">Entries</h3>
             <div className="space-y-3">
               {voucher.entries && voucher.entries.map((entry, index) => (
-                <div key={index} className="bg-gray-50 p-4 rounded">
+                <div key={index} className="bg-luxury-bg p-4 rounded">
                   <div className="grid grid-cols-3 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-500 mb-1">Ledger</label>

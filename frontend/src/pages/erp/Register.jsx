@@ -299,7 +299,7 @@ const Register = () => {
           </div>
 
           <h1 className="login-title">Create Account</h1>
-          <p className="login-tagline">Om Veneer Udhyog</p>
+          <p className="login-tagline">Om Veneer Pvt. Ltd.</p>
 
           <div className="divider">
             <div className="divider-line" />

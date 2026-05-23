@@ -201,7 +201,7 @@ const VoucherEdit = () => {
 
             <div>
               <label className="block text-sm font-medium mb-2">Total Amount</label>
-              <div className="text-gray-900 bg-white font-semibold w-full px-4 py-2 border rounded bg-gray-100 font-bold text-blue-600">
+              <div className="text-gray-900 bg-white font-semibold w-full px-4 py-2 border rounded bg-luxury-bg font-bold text-blue-600">
                 ₹{formData.totalAmount.toFixed(2)}
               </div>
             </div>
@@ -232,7 +232,7 @@ const VoucherEdit = () => {
 
             <div className="space-y-4">
               {formData.entries.map((entry, index) => (
-                <div key={index} className="border p-4 rounded bg-gray-50">
+                <div key={index} className="border p-4 rounded bg-luxury-bg">
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     <div className="md:col-span-2">
                       <label className="block text-sm font-medium mb-2">
@@ -306,7 +306,7 @@ const VoucherEdit = () => {
             <button
               type="button"
               onClick={() => navigate('/vouchers')}
-              className="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600"
+              className="bg-luxury-bg0 text-white px-6 py-2 rounded hover:bg-gray-600"
             >
               Cancel
             </button>

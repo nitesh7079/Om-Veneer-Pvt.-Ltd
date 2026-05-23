@@ -81,7 +81,7 @@ function CompanyPage() {
           </motion.p>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 max-w-5xl mx-auto text-white drop-shadow-xl"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading mb-6 max-w-5xl mx-auto text-white drop-shadow-xl"
           >
             A Professional Veneer Supply Network Built on Trust.
           </motion.h1>
@@ -89,7 +89,7 @@ function CompanyPage() {
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-2xl text-white max-w-3xl mx-auto drop-shadow-lg font-medium"
           >
-            Om Veneer Udhyog has been serving the plywood industry for over a decade, providing consistent, high-quality veneer raw materials for scalable plywood production.
+            Om Veneer Pvt. Ltd. has been serving the plywood industry for over a decade, providing consistent, high-quality veneer raw materials for scalable plywood production.
           </motion.p>
         </div>
       </section>
@@ -108,7 +108,7 @@ function CompanyPage() {
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 + (i*0.1) }}
               className="modern-card p-6 text-center"
             >
-              <p className="text-2xl md:text-3xl font-extrabold text-navy">{value}</p>
+              <p className="text-2xl md:text-3xl font-bold font-heading text-navy">{value}</p>
               <p className="text-sm text-text-main font-semibold mt-1 uppercase tracking-wide">{label}</p>
             </motion.div>
           ))}
@@ -120,10 +120,10 @@ function CompanyPage() {
         <div className="max-w-7xl mx-auto px-5 md:px-10 grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-sm font-bold uppercase tracking-widest text-orange mb-3">Our History</p>
-            <h2 className="text-4xl font-extrabold text-navy mb-6">Built on Trust, Delivered with Precision.</h2>
+            <h2 className="text-4xl font-bold font-heading text-navy mb-6">Built on Trust, Delivered with Precision.</h2>
             <div className="space-y-4 text-text-main leading-relaxed">
               <p>
-                Based in Birtamod, Jhapa, Om Veneer Udhyog has spent the last 10 years perfecting the supply of 2.5mm and 1.8mm core and fali veneer.
+                Based in Birtamod, Jhapa, Om Veneer Pvt. Ltd. has spent the last 10 years perfecting the supply of 2.5mm and 1.8mm core and fali veneer.
               </p>
               <p>
                 Our philosophy is simple: plywood factories need predictability. By maintaining strict quality controls on thickness and moisture, and ensuring reliable dispatch, we help factories reduce waste and maintain steady production lines.
@@ -133,7 +133,7 @@ function CompanyPage() {
               </p>
             </div>
             <div className="mt-8">
-              <Link to="/contact" className="btn-primary">Partner With Us</Link>
+              <Link to="/contact" className="px-6 py-3 font-bold text-sm uppercase tracking-widest text-navy bg-orange border border-orange hover:bg-orange-light transition-all duration-300">Partner With Us</Link>
             </div>
           </div>
           
@@ -146,11 +146,11 @@ function CompanyPage() {
       </section>
 
       {/* Timber Selection */}
-      <section className="section-padding bg-gray-50 border-t border-gray-200">
+      <section className="section-padding bg-luxury-bg border-t border-gray-200">
          <div className="max-w-7xl mx-auto px-5 md:px-10">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <p className="text-sm font-bold uppercase tracking-widest text-orange mb-3">Raw Material Sourcing</p>
-              <h2 className="text-4xl md:text-5xl font-extrabold text-navy">Massive Scale, Premium Quality.</h2>
+              <h2 className="text-4xl md:text-5xl font-bold font-heading text-navy">Massive Scale, Premium Quality.</h2>
               <p className="mt-6 text-text-main text-lg leading-relaxed">
                 We manufacture our veneer on a massive scale. To ensure uninterrupted supply for our partners, we maintain a vast, carefully curated inventory of high-grade Goliya (timber). This allows us to guarantee consistency, strength, and precise thickness across every single dispatch.
               </p>
@@ -186,7 +186,7 @@ function CompanyPage() {
             </div>
 
             <div className="mt-16 text-center">
-               <p className="text-sm font-extrabold uppercase tracking-widest text-navy bg-orange/10 inline-block px-6 py-2 rounded-full border border-orange/20">
+               <p className="text-sm font-bold font-heading uppercase tracking-widest text-navy bg-orange/10 inline-block px-6 py-2 rounded-full border border-orange/20">
                  Over 500+ Tons Processed Monthly
                </p>
             </div>
@@ -202,7 +202,7 @@ function CompanyPage() {
          <div className="max-w-7xl mx-auto px-5 md:px-10 relative z-10">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <p className="text-sm font-bold uppercase tracking-widest text-orange mb-3">Wood Species</p>
-              <h2 className="text-4xl md:text-5xl font-extrabold text-white">Premium Timber Varieties.</h2>
+              <h2 className="text-4xl md:text-5xl font-bold font-heading text-white">Premium Timber Varieties.</h2>
               <p className="mt-6 text-gray-300 text-lg leading-relaxed">
                 The foundation of our high-quality veneer is the raw timber itself. We selectively source and process specific species to match the exact density, peeling behavior, and bonding requirements of premium plywood manufacturing.
               </p>
@@ -211,7 +211,7 @@ function CompanyPage() {
             <div className="grid md:grid-cols-3 gap-8">
               {/* Pure Utis */}
               <div className="bg-navy-light p-8 rounded-xl border border-navy-lighter hover:border-orange transition-colors group">
-                <h3 className="text-2xl font-extrabold text-white mb-2">Pure Utis</h3>
+                <h3 className="text-2xl font-bold font-heading text-white mb-2">Pure Utis</h3>
                 <p className="text-orange text-sm font-bold uppercase tracking-widest mb-8 border-b border-navy-lighter pb-4 group-hover:border-orange transition-colors">Himalayan Alder</p>
                 <ul className="space-y-5 text-gray-300 text-sm">
                   <li className="flex gap-4">
@@ -231,7 +231,7 @@ function CompanyPage() {
 
               {/* Chilaune */}
               <div className="bg-navy-light p-8 rounded-xl border border-navy-lighter hover:border-orange transition-colors group">
-                <h3 className="text-2xl font-extrabold text-white mb-2">Chilaune</h3>
+                <h3 className="text-2xl font-bold font-heading text-white mb-2">Chilaune</h3>
                 <p className="text-orange text-sm font-bold uppercase tracking-widest mb-8 border-b border-navy-lighter pb-4 group-hover:border-orange transition-colors">Schima Wallichii</p>
                 <ul className="space-y-5 text-gray-300 text-sm">
                   <li className="flex gap-4">
@@ -251,7 +251,7 @@ function CompanyPage() {
 
               {/* Mixed Timber */}
               <div className="bg-navy-light p-8 rounded-xl border border-navy-lighter hover:border-orange transition-colors group">
-                <h3 className="text-2xl font-extrabold text-white mb-2">Mixed Timber</h3>
+                <h3 className="text-2xl font-bold font-heading text-white mb-2">Mixed Timber</h3>
                 <p className="text-orange text-sm font-bold uppercase tracking-widest mb-8 border-b border-navy-lighter pb-4 group-hover:border-orange transition-colors">Select Local Hardwoods</p>
                 <ul className="space-y-5 text-gray-300 text-sm">
                   <li className="flex gap-4">
@@ -285,7 +285,7 @@ function CompanyPage() {
           </div>
           <div>
             <p className="text-sm font-bold uppercase tracking-widest text-orange mb-3">Leadership</p>
-            <h2 className="text-4xl font-extrabold text-white mb-6">Message from the Founder</h2>
+            <h2 className="text-4xl font-bold font-heading text-white mb-6">Message from the Founder</h2>
             <div className="space-y-4 text-gray-200 text-lg leading-relaxed">
               <p>
                 "Driven by decades of industry experience, our foundation was built on a simple premise: to provide plywood factories with veneer raw material they can trust without second-guessing."
@@ -295,26 +295,26 @@ function CompanyPage() {
               </p>
             </div>
             <div className="mt-8 pt-6 border-t border-navy-lighter">
-              <p className="font-extrabold text-xl text-white">Founder & Managing Director</p>
-              <p className="text-orange font-bold uppercase tracking-widest text-sm mt-1">Om Veneer Udhyog</p>
+              <p className="font-bold font-heading text-xl text-white">Founder & Managing Director</p>
+              <p className="text-orange font-bold uppercase tracking-widest text-sm mt-1">Om Veneer Pvt. Ltd.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Branch Network */}
-      <section className="section-padding bg-gray-100">
+      <section className="section-padding bg-luxury-bg">
          <div className="max-w-7xl mx-auto px-5 md:px-10">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <p className="text-sm font-bold uppercase tracking-widest text-orange mb-3">Our Reach</p>
-              <h2 className="text-4xl font-extrabold text-navy">5 Branch Presence Across Nepal</h2>
+              <h2 className="text-4xl font-bold font-heading text-navy">5 Branch Presence Across Nepal</h2>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {branchNetwork.map((item, index) => (
                 <div key={index} className="modern-card p-6 border-t-4 border-t-orange">
                   <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Branch {index + 1}</p>
-                  <h3 className="text-xl font-extrabold text-navy mb-3">{item.branch}</h3>
+                  <h3 className="text-xl font-bold font-heading text-navy mb-3">{item.branch}</h3>
                   <p className="text-text-main text-sm">{item.note}</p>
                 </div>
               ))}

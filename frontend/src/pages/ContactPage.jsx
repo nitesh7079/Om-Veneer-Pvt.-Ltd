@@ -31,7 +31,7 @@ function ContactPage() {
       <section className="bg-navy pt-32 pb-24 text-white">
         <div className="max-w-7xl mx-auto px-5 md:px-10 text-center">
           <p className="text-sm font-bold uppercase tracking-widest text-orange mb-4">Contact Us</p>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold font-heading mb-6 max-w-4xl mx-auto">
             Let's discuss your raw material needs.
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
@@ -46,9 +46,9 @@ function ContactPage() {
           {/* Contact Info */}
           <div className="lg:col-span-2 space-y-6">
             <div className="modern-card p-8 border-l-4 border-l-orange">
-              <h3 className="text-2xl font-extrabold text-navy mb-4">Head Office</h3>
+              <h3 className="text-2xl font-bold font-heading text-navy mb-4">Head Office</h3>
               <div className="space-y-2 text-text-main">
-                <p className="font-bold">Om Veneer Udhyog</p>
+                <p className="font-bold">Om Veneer Pvt. Ltd.</p>
                 <p>Birtamode-3, Jhapa, Nepal</p>
                 <p>PAN: 600496320</p>
                 <p className="pt-4 border-t border-gray-100 mt-4">
@@ -60,8 +60,8 @@ function ContactPage() {
               </div>
             </div>
 
-            <div className="modern-card p-8 bg-gray-50">
-              <h3 className="text-xl font-extrabold text-navy mb-4">Business Support</h3>
+            <div className="modern-card p-8 bg-luxury-bg">
+              <h3 className="text-xl font-bold font-heading text-navy mb-4">Business Support</h3>
               <ul className="space-y-3 text-sm text-text-main">
                 <li className="flex justify-between border-b border-gray-200 pb-2">
                   <span className="font-bold text-navy">Coverage:</span> <span>Nepal + India</span>
@@ -79,7 +79,7 @@ function ContactPage() {
           {/* Form */}
           <div className="lg:col-span-3">
             <div className="modern-card p-8 md:p-10">
-              <h2 className="text-3xl font-extrabold text-navy mb-2">Submit Enquiry</h2>
+              <h2 className="text-3xl font-bold font-heading text-navy mb-2">Submit Enquiry</h2>
               <p className="text-text-main mb-8">Fill out the form below and we will get back to you shortly.</p>
 
               <form onSubmit={handleSubmit} className="space-y-5">
@@ -92,7 +92,7 @@ function ContactPage() {
                       required
                       value={contact.name}
                       onChange={handleInput}
-                      className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange transition-colors"
+                      className="w-full bg-luxury-bg border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange transition-colors"
                     />
                   </div>
                   <div>
@@ -103,7 +103,7 @@ function ContactPage() {
                       required
                       value={contact.phone}
                       onChange={handleInput}
-                      className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange transition-colors"
+                      className="w-full bg-luxury-bg border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange transition-colors"
                     />
                   </div>
                 </div>
@@ -114,7 +114,7 @@ function ContactPage() {
                     name="inquiryType"
                     value={contact.inquiryType}
                     onChange={handleInput}
-                    className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange transition-colors"
+                    className="w-full bg-luxury-bg border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange transition-colors"
                   >
                     <option value="Raw Material Enquiry">Raw Material Enquiry</option>
                     <option value="Bulk Order">Bulk Order</option>
@@ -132,11 +132,11 @@ function ContactPage() {
                     onChange={handleInput}
                     placeholder="Share quantity, product type, and delivery location..."
                     rows={5}
-                    className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange transition-colors resize-none"
+                    className="w-full bg-luxury-bg border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange transition-colors resize-none"
                   />
                 </div>
 
-                <button type="submit" className="btn-primary w-full">
+                <button type="submit" className="px-6 py-3 font-bold text-sm uppercase tracking-widest text-navy bg-orange border border-orange hover:bg-orange-light transition-all duration-300 w-full">
                   Send Message
                 </button>
               </form>

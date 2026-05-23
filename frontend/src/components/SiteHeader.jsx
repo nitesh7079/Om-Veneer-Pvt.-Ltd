@@ -14,16 +14,13 @@ function SiteHeader() {
         <Link
           to="/"
           className="flex items-center gap-3"
-          aria-label="Om Veneer Udhyog"
+          aria-label="Om Veneer Pvt. Ltd."
         >
           <img
             src="/images/products/logo.png"
             alt="Om Veneer logo"
-            className="h-10 w-auto object-contain sm:h-12"
+            className="h-12 w-auto object-contain sm:h-16"
           />
-          <span className="font-heading text-lg font-bold tracking-tight text-navy">
-            Om Veneer Udhyog
-          </span>
         </Link>
 
         {/* Desktop Nav */}

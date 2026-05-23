@@ -148,16 +148,16 @@ export default function HomePage() {
           <p className="text-sm font-bold uppercase tracking-widest text-orange mb-3">Massive Scale Inventory</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-navy">Over 500+ Tons Processed Monthly</h2>
         </div>
-        
+
         <div className="relative w-full flex flex-col gap-6 overflow-hidden group">
           {/* Row 1: Left to Right (Reverse) */}
           <div className="animate-marquee-scroll" style={{ animationDirection: "reverse", animationDuration: "70s" }}>
             {[...Array.from({ length: 15 }, (_, i) => `IMG_${6656 + i}.jpg`), ...Array.from({ length: 15 }, (_, i) => `IMG_${6656 + i}.jpg`)].map((img, index) => (
               <div key={`row1-${index}`} className="w-56 h-56 md:w-72 md:h-72 flex-shrink-0 mx-3 overflow-hidden rounded-2xl shadow-lg border border-gray-200 bg-white p-2">
                 <div className="w-full h-full rounded-xl overflow-hidden relative">
-                  <img 
-                    src={`/images/goliya/${img}`} 
-                    alt="Timber Stock" 
+                  <img
+                    src={`/images/goliya/${img}`}
+                    alt="Timber Stock"
                     className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
                     loading="lazy"
                   />
@@ -172,9 +172,9 @@ export default function HomePage() {
             {[...Array.from({ length: 14 }, (_, i) => `IMG_${6671 + i}.jpg`), ...Array.from({ length: 14 }, (_, i) => `IMG_${6671 + i}.jpg`)].map((img, index) => (
               <div key={`row2-${index}`} className="w-56 h-56 md:w-72 md:h-72 flex-shrink-0 mx-3 overflow-hidden rounded-2xl shadow-lg border border-gray-200 bg-white p-2">
                 <div className="w-full h-full rounded-xl overflow-hidden relative">
-                  <img 
-                    src={`/images/goliya/${img}`} 
-                    alt="Timber Stock" 
+                  <img
+                    src={`/images/goliya/${img}`}
+                    alt="Timber Stock"
                     className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
                     loading="lazy"
                   />
@@ -183,7 +183,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          
+
           {/* Edge gradients for smooth fade */}
           <div className="absolute top-0 bottom-0 left-0 w-24 md:w-64 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
           <div className="absolute top-0 bottom-0 right-0 w-24 md:w-64 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
@@ -282,9 +282,9 @@ export default function HomePage() {
       <section className="relative py-32 overflow-hidden border-t-4 border-orange">
         {/* Cinematic Background Image */}
         <div className="absolute inset-0">
-          <img 
-            src="/images/company/IMG_6675.jpg" 
-            alt="Om Veneer Factory" 
+          <img
+            src="/images/company/IMG_6675.jpg"
+            alt="Om Veneer Factory"
             className="w-full h-full object-cover object-center"
           />
           {/* Deep Navy to Transparent Gradient Overlay */}
@@ -305,16 +305,16 @@ export default function HomePage() {
               Start Your Supply Partnership
             </span>
           </div>
-          
+
           <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-8 drop-shadow-2xl leading-tight">
             Ready to scale your <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange to-yellow-400">plywood production?</span>
           </h2>
-          
+
           <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-lg">
-            Join the top factories across Nepal and India. Partner with Om Veneer Udhyog for flawless consistency, transparent communication, and guaranteed timely dispatch.
+            Join the top factories across Nepal and India. Partner with Om Veneer Pvt. Ltd. for flawless consistency, transparent communication, and guaranteed timely dispatch.
           </p>
-          
+
           <Link to="/contact" className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-300 bg-orange rounded-lg overflow-hidden hover:scale-105 shadow-[0_0_40px_rgba(255,107,53,0.4)] hover:shadow-[0_0_60px_rgba(255,107,53,0.6)]">
             <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
             <span className="relative text-lg tracking-wider uppercase flex items-center gap-3">

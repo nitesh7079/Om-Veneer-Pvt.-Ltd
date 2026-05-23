@@ -164,7 +164,7 @@ const Receivables = () => {
             </thead>
             <tbody className="divide-y divide-gray-200">
               {receivables.map((item, idx) => (
-                <tr key={idx} className="hover:bg-gray-50">
+                <tr key={idx} className="hover:bg-luxury-bg">
                   <td className="px-4 py-3 font-semibold">{item.debtor.name}</td>
                   <td className="px-4 py-3">{item.debtor.contactDetails?.mobile || '-'}</td>
                   <td className="px-4 py-3 text-right font-bold text-blue-600">
@@ -197,7 +197,7 @@ const Receivables = () => {
                 .sort((a, b) => b.balance - a.balance)
                 .slice(0, 5)
                 .map((item, idx) => (
-                  <div key={idx} className="flex justify-between items-center p-3 bg-gray-50 rounded">
+                  <div key={idx} className="flex justify-between items-center p-3 bg-luxury-bg rounded">
                     <div>
                       <div className="font-semibold">{item.debtor.name}</div>
                       <div className="text-sm text-gray-600">{item.transactions.length} transactions</div>

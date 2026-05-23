@@ -142,7 +142,7 @@ const TrialBalance = () => {
           </div>
 
           <table className="w-full">
-            <thead className="bg-gray-50">
+            <thead className="bg-luxury-bg">
               <tr>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Ledger</th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Group</th>
@@ -152,7 +152,7 @@ const TrialBalance = () => {
             </thead>
             <tbody className="divide-y divide-gray-200">
               {data.entries.map((entry, idx) => (
-                <tr key={idx} className="hover:bg-gray-50">
+                <tr key={idx} className="hover:bg-luxury-bg">
                   <td className="px-6 py-4">{entry.ledger}</td>
                   <td className="px-6 py-4 text-gray-600">{entry.group}</td>
                   <td className="px-6 py-4 text-right">
@@ -163,7 +163,7 @@ const TrialBalance = () => {
                   </td>
                 </tr>
               ))}
-              <tr className="bg-gray-100 font-bold">
+              <tr className="bg-luxury-bg font-bold">
                 <td className="px-6 py-4">Total</td>
                 <td className="px-6 py-4"></td>
                 <td className="px-6 py-4 text-right">{data.totals.debit}</td>

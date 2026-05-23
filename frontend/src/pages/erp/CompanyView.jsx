@@ -56,11 +56,11 @@ const CompanyView = () => {
       <Navbar />
       <div className="container mx-auto px-4 py-8 max-w-5xl animate-fade-in-up">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 tracking-tight">{company.name}</h1>
+          <h1 className="text-4xl font-bold font-heading text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 tracking-tight">{company.name}</h1>
           <div className="flex gap-3">
             <button
               onClick={() => navigate('/companies')}
-              className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+              className="bg-luxury-bg0 text-white px-4 py-2 rounded hover:bg-gray-600"
             >
               Back to List
             </button>

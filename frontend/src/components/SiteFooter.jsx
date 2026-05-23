@@ -12,11 +12,8 @@ function SiteFooter() {
               <img
                 src="/images/products/logo.png"
                 alt="Om Veneer logo"
-                className="h-14 w-auto rounded bg-white p-1"
+                className="h-20 w-auto rounded bg-white p-2"
               />
-              <span className="font-heading text-xl font-bold tracking-tight text-white">
-                Om Veneer <span className="text-orange">Udhyog</span>
-              </span>
             </Link>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-gray-300">
               Your dependable partner for premium veneer raw material, ensuring stable and consistent supply for plywood and door board manufacturing across Nepal and India.
@@ -58,7 +55,7 @@ function SiteFooter() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between border-t border-gray-700 pt-8 text-xs text-gray-400 sm:flex-row">
-          <p>© {new Date().getFullYear()} Om Veneer Udhyog. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Om Veneer Pvt. Ltd. All rights reserved.</p>
           <div className="mt-4 flex gap-4 sm:mt-0">
             <Link to="/contact" className="hover:text-white">Support</Link>
             <Link to="/products" className="hover:text-white">Products</Link>

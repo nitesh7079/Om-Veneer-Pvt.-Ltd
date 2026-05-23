@@ -118,7 +118,7 @@ const LedgerCreate = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 pb-20">
       <Navbar />
       <div className="container mx-auto px-4 py-10 max-w-2xl animate-fade-in-up">
-        <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 mb-8 tracking-tight text-center">Create Ledger</h1>
+        <h1 className="text-4xl font-bold font-heading text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 mb-8 tracking-tight text-center">Create Ledger</h1>
 
         {error && (
           <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
@@ -220,7 +220,7 @@ const LedgerCreate = () => {
               <button
                 type="button"
                 onClick={() => navigate('/ledgers')}
-                className="w-full bg-white text-gray-700 px-8 py-3 rounded-xl border border-gray-200 hover:bg-gray-50 font-semibold transition-all duration-200"
+                className="w-full bg-white text-gray-700 px-8 py-3 rounded-xl border border-gray-200 hover:bg-luxury-bg font-semibold transition-all duration-200"
               >
                 Cancel
               </button>

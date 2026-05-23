@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        navy: "#0A192F",
-        "navy-light": "#112240",
-        "navy-lighter": "#233554",
-        orange: "#FF6B35",
-        "orange-light": "#FF8C61",
+        navy: "#281e18",
+        "navy-light": "#3a2c22",
+        "navy-lighter": "#4c3a2d",
+        orange: "#B68D53",
+        "orange-light": "#C9A268",
         "text-main": "#334155",
       },
       fontFamily: {
@@ -30,4 +30,6 @@ export default {
     },
   },
   plugins: [],
+};
+plugins: [],
 };

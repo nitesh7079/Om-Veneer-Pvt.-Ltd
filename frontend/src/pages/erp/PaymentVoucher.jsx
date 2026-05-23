@@ -227,7 +227,7 @@ const PaymentVoucher = () => {
             </div>
 
             <div className="flex gap-4 pt-4 border-t-2 border-gray-300">
-              <button type="button" onClick={() => navigate('/vouchers')} className="bg-gray-500 text-white px-6 py-2 hover:bg-gray-600">Q: Quit</button>
+              <button type="button" onClick={() => navigate('/vouchers')} className="bg-luxury-bg0 text-white px-6 py-2 hover:bg-gray-600">Q: Quit</button>
               <button type="submit" disabled={loading} className="bg-green-600 text-white px-6 py-2 hover:bg-green-700 disabled:bg-gray-400">{loading ? 'Saving...' : 'A: Accept'}</button>
               <button type="button" className="bg-red-600 text-white px-6 py-2 hover:bg-red-700">D: Delete</button>
               <button type="button" onClick={() => window.location.reload()} className="bg-yellow-600 text-white px-6 py-2 hover:bg-yellow-700">X: Cancel</button>

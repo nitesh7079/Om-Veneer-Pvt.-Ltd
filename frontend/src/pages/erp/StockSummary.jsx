@@ -130,7 +130,7 @@ const StockSummary = () => {
               {items.map((item) => {
                 const isLowStock = item.currentStock?.quantity <= item.reorderLevel;
                 return (
-                  <tr key={item._id} className="hover:bg-gray-50">
+                  <tr key={item._id} className="hover:bg-luxury-bg">
                     <td className="px-4 py-3">{item.code || '-'}</td>
                     <td className="px-4 py-3 font-semibold">{item.name}</td>
                     <td className="px-4 py-3">{item.unit}</td>

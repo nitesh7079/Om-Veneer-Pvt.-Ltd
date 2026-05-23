@@ -134,7 +134,7 @@ const VoucherCreate = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 pb-20">
       <Navbar />
       <div className="container mx-auto px-4 py-10 max-w-4xl animate-fade-in-up">
-        <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 mb-8 tracking-tight text-center">Create Voucher</h1>
+        <h1 className="text-4xl font-bold font-heading text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 mb-8 tracking-tight text-center">Create Voucher</h1>
 
         {error && (
           <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
@@ -204,7 +204,7 @@ const VoucherCreate = () => {
 
               <div className="overflow-x-auto">
                 <table className="w-full border">
-                  <thead className="bg-gray-100">
+                  <thead className="bg-luxury-bg">
                     <tr>
                       <th className="px-4 py-2 text-left">Ledger</th>
                       <th className="px-4 py-2 text-left">Type</th>
@@ -265,7 +265,7 @@ const VoucherCreate = () => {
                       </tr>
                     ))}
                   </tbody>
-                  <tfoot className="bg-gray-50 font-semibold">
+                  <tfoot className="bg-luxury-bg font-semibold">
                     <tr className="border-t-2">
                       <td className="px-4 py-2" colSpan="2">Total</td>
                       <td className="px-4 py-2 text-right">
@@ -308,7 +308,7 @@ const VoucherCreate = () => {
               <button
                 type="button"
                 onClick={() => navigate('/vouchers')}
-                className="w-full bg-white text-gray-700 px-8 py-3 rounded-xl border border-gray-200 hover:bg-gray-50 font-semibold transition-all duration-200"
+                className="w-full bg-white text-gray-700 px-8 py-3 rounded-xl border border-gray-200 hover:bg-luxury-bg font-semibold transition-all duration-200"
               >
                 Cancel
               </button>

@@ -329,7 +329,7 @@ const Login = () => {
 
           <h1 className="login-title">Veneer ERP</h1>
           <p className="login-subtitle">Enterprise Resource Planning</p>
-          <p className="login-tagline">Om Veneer Udhyog</p>
+          <p className="login-tagline">Om Veneer Pvt. Ltd.</p>
 
           <div className="divider">
             <div className="divider-line" />

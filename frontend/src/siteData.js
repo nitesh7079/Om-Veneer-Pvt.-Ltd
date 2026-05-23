@@ -88,7 +88,6 @@ export const navLinks = [
   ["Products", "/products"],
   ["History", "/history"],
   ["Contact", "/contact"],
-  ["Login", "/login"],
 ];
 
 export const sectionReveal = {

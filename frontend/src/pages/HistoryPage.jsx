@@ -7,7 +7,7 @@ const historyMilestones = [
     year: "Phase 1",
     title: "Small Factory Foundation",
     detail:
-      "Om Veneer Udhyog began in Birtamod, Jhapa, with a compact factory setup and a simple but serious mission: supply dependable veneer raw material that factories could trust every day. In the early years, operations were handled by a small team that focused on grading discipline, careful stacking, and on-time dispatch for nearby plywood units. Rather than chasing rapid expansion, the company built its base through process consistency and practical service reliability.",
+      "Om Veneer Pvt. Ltd. began in Birtamod, Jhapa, with a compact factory setup and a simple but serious mission: supply dependable veneer raw material that factories could trust every day. In the early years, operations were handled by a small team that focused on grading discipline, careful stacking, and on-time dispatch for nearby plywood units. Rather than chasing rapid expansion, the company built its base through process consistency and practical service reliability.",
     image: productImageLinks["2.5mm Core"],
   },
   {
@@ -47,11 +47,11 @@ function HistoryPage() {
       <section className="bg-navy pt-32 pb-24 text-white">
         <div className="max-w-7xl mx-auto px-5 md:px-10 text-center">
           <p className="text-sm font-bold uppercase tracking-widest text-orange mb-4">Our History</p>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold font-heading mb-6 max-w-4xl mx-auto">
             From Small Factory to Nepal-Wide Network.
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            The history of Om Veneer Udhyog is not a story of sudden growth; it is the result of years of steady work, operational honesty, and long-term partnership thinking.
+            The history of Om Veneer Pvt. Ltd. is not a story of sudden growth; it is the result of years of steady work, operational honesty, and long-term partnership thinking.
           </p>
         </div>
       </section>
@@ -61,7 +61,7 @@ function HistoryPage() {
            <div className="grid md:grid-cols-2 gap-8 text-text-main text-lg leading-relaxed">
               <div>
                  <p className="mb-4">
-                  Om Veneer Udhyog started as a small factory-driven veneer supplier in Birtamod with limited volume,
+                  Om Veneer Pvt. Ltd. started as a small factory-driven veneer supplier in Birtamod with limited volume,
                   limited manpower, and a clear long-term mindset. In the beginning, the company served nearby plywood
                   manufacturers by focusing on what matters most in raw material supply: dependable grading, stable quality,
                   and timely dispatch.
@@ -85,7 +85,7 @@ function HistoryPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-gray-100 border-y border-gray-200">
+      <section className="section-padding bg-luxury-bg border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-5 md:px-10">
           <div className="space-y-16">
             {historyMilestones.map((item, index) => (
@@ -105,7 +105,7 @@ function HistoryPage() {
                 </div>
                 <div className="w-full md:w-1/2">
                   <p className="text-sm font-bold uppercase tracking-widest text-orange mb-2">{item.year}</p>
-                  <h2 className="text-3xl font-extrabold text-navy mb-4">{item.title}</h2>
+                  <h2 className="text-3xl font-bold font-heading text-navy mb-4">{item.title}</h2>
                   <p className="text-text-main leading-relaxed text-lg">{item.detail}</p>
                 </div>
               </motion.article>
@@ -119,7 +119,7 @@ function HistoryPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
              <div>
                 <p className="text-sm font-bold uppercase tracking-widest text-orange mb-3">Spread Across Nepal</p>
-                <h2 className="text-4xl font-extrabold text-white mb-6">Branch-Supported Growth Model</h2>
+                <h2 className="text-4xl font-bold font-heading text-white mb-6">Branch-Supported Growth Model</h2>
                 <div className="space-y-4 text-gray-300 text-lg">
                    <p>
                      What began with one unit in Birtamod now operates through a branch-backed structure across Nepal. This
@@ -155,9 +155,9 @@ function HistoryPage() {
 
       <section className="section-padding text-center">
          <div className="max-w-4xl mx-auto px-5">
-            <h2 className="text-3xl font-extrabold text-navy mb-6">Our Current Position</h2>
+            <h2 className="text-3xl font-bold font-heading text-navy mb-6">Our Current Position</h2>
             <p className="text-lg text-text-main leading-relaxed mb-10">
-              Today, Om Veneer Udhyog is recognized as a trusted high-volume veneer raw material supplier for
+              Today, Om Veneer Pvt. Ltd. is recognized as a trusted high-volume veneer raw material supplier for
               plywood and door board manufacturing. From sourcing and grading to quality checks and dispatch, each stage
               is managed with professional discipline and operational accountability.
             </p>

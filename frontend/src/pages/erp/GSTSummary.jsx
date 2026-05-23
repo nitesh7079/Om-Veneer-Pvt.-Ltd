@@ -153,7 +153,7 @@ const GSTSummary = () => {
             <div className="flex items-end">
               <button
                 onClick={() => { setStartDate(''); setEndDate(''); }}
-                className="w-full bg-gray-100 text-gray-700 font-semibold py-3 rounded-xl shadow hover:bg-gray-200 transition"
+                className="w-full bg-luxury-bg text-gray-700 font-semibold py-3 rounded-xl shadow hover:bg-gray-200 transition"
               >
                 Clear Filters
               </button>
@@ -196,7 +196,7 @@ const GSTSummary = () => {
                 </thead>
                 <tbody className="divide-y divide-gray-100">
                   {taxBreakdown.map((row) => (
-                    <tr key={row.label} className="hover:bg-gray-50">
+                    <tr key={row.label} className="hover:bg-luxury-bg">
                       <td className="px-6 py-4 font-semibold text-gray-700">{row.label}</td>
                       <td className="px-6 py-4 text-right text-gray-800">{formatCurrency(row.sales)}</td>
                       <td className="px-6 py-4 text-right text-gray-800">{formatCurrency(row.purchase)}</td>

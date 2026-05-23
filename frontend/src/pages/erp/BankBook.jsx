@@ -230,12 +230,12 @@ const BankBook = () => {
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
-              <tr className="bg-gray-100 font-semibold">
+              <tr className="bg-luxury-bg font-semibold">
                 <td colSpan="6" className="px-4 py-2">Opening Balance</td>
                 <td className="px-4 py-2 text-right">₹{openingBalance.toFixed(2)}</td>
               </tr>
               {transactionsWithBalance.map((txn, idx) => (
-                <tr key={idx} className="hover:bg-gray-50">
+                <tr key={idx} className="hover:bg-luxury-bg">
                   <td className="px-4 py-3">{new Date(txn.date).toLocaleDateString()}</td>
                   <td className="px-4 py-3">{txn.voucherNumber}</td>
                   <td className="px-4 py-3">{txn.voucherType}</td>

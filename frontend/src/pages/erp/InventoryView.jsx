@@ -69,7 +69,7 @@ const InventoryView = () => {
             </Link>
             <button
               onClick={() => navigate('/inventory')}
-              className="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600"
+              className="bg-luxury-bg0 text-white px-6 py-2 rounded hover:bg-gray-600"
             >
               Back
             </button>

@@ -130,13 +130,13 @@ const DayBook = () => {
             <tbody className="divide-y divide-gray-200">
               {vouchers.map((voucher) => (
                 <React.Fragment key={voucher._id}>
-                  <tr className="bg-gray-50 font-semibold">
+                  <tr className="bg-luxury-bg font-semibold">
                     <td className="px-4 py-2">{voucher.voucherNumber}</td>
                     <td className="px-4 py-2">{voucher.voucherType}</td>
                     <td className="px-4 py-2" colSpan="3">{voucher.narration || '-'}</td>
                   </tr>
                   {voucher.entries.map((entry, idx) => (
-                    <tr key={idx} className="hover:bg-gray-50">
+                    <tr key={idx} className="hover:bg-luxury-bg">
                       <td className="px-4 py-2"></td>
                       <td className="px-4 py-2"></td>
                       <td className="px-4 py-2 pl-8">

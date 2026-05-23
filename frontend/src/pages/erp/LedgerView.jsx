@@ -125,7 +125,7 @@ const LedgerView = () => {
           </div>
           <button
             onClick={() => navigate('/ledgers')}
-            className="mt-4 bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600"
+            className="mt-4 bg-luxury-bg0 text-white px-6 py-2 rounded hover:bg-gray-600"
           >
             Back to Ledgers
           </button>
@@ -161,7 +161,7 @@ const LedgerView = () => {
             </Link>
             <button
               onClick={() => navigate('/ledgers')}
-              className="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600"
+              className="bg-luxury-bg0 text-white px-6 py-2 rounded hover:bg-gray-600"
             >
               Back
             </button>
@@ -278,7 +278,7 @@ const LedgerView = () => {
 
         {/* Transactions Table */}
         <div className="bg-white rounded-lg shadow overflow-hidden">
-          <div className="px-6 py-4 bg-gray-50 border-b">
+          <div className="px-6 py-4 bg-luxury-bg border-b">
             <h2 className="text-xl font-semibold">Transaction History</h2>
           </div>
           
@@ -295,7 +295,7 @@ const LedgerView = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                <tr className="bg-gray-100 font-semibold">
+                <tr className="bg-luxury-bg font-semibold">
                   <td colSpan="5" className="px-4 py-2">Opening Balance</td>
                   <td className="px-4 py-2 text-right">
                     ₹{(ledger.openingBalance?.amount || 0).toFixed(2)}
@@ -303,7 +303,7 @@ const LedgerView = () => {
                 </tr>
                 {transactions.length > 0 ? (
                   transactions.map((txn, idx) => (
-                    <tr key={idx} className="hover:bg-gray-50">
+                    <tr key={idx} className="hover:bg-luxury-bg">
                       <td className="px-4 py-3">{new Date(txn.date).toLocaleDateString()}</td>
                       <td className="px-4 py-3">{txn.voucherNumber}</td>
                       <td className="px-4 py-3">{txn.particulars}</td>

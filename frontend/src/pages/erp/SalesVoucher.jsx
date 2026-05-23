@@ -280,7 +280,7 @@ const SalesVoucher = () => {
                 </thead>
                 <tbody>
                   {formData.items.map((item, index) => (
-                    <tr key={index} className="hover:bg-gray-50">
+                    <tr key={index} className="hover:bg-luxury-bg">
                       <td className="border px-2 py-1">
                         <select
                           value={item.inventoryItem}
@@ -326,7 +326,7 @@ const SalesVoucher = () => {
                           type="number"
                           value={item.amount}
                           readOnly
-                          className="w-full text-right px-2 py-1 border-0 bg-gray-50 font-semibold"
+                          className="w-full text-right px-2 py-1 border-0 bg-luxury-bg font-semibold"
                           step="0.01"
                         />
                       </td>
@@ -383,7 +383,7 @@ const SalesVoucher = () => {
               <button
                 type="button"
                 onClick={() => navigate('/vouchers')}
-                className="bg-gray-500 text-white px-6 py-2 hover:bg-gray-600"
+                className="bg-luxury-bg0 text-white px-6 py-2 hover:bg-gray-600"
               >
                 Q: Quit
               </button>

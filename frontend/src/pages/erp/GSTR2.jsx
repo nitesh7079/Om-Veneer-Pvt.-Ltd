@@ -164,7 +164,7 @@ const GSTR2 = () => {
                     </tr>
                   )}
                   {entries.map((entry) => (
-                    <tr key={entry._id} className="hover:bg-gray-50">
+                    <tr key={entry._id} className="hover:bg-luxury-bg">
                       <td className="px-6 py-4">{new Date(entry.date).toLocaleDateString('en-IN')}</td>
                       <td className="px-6 py-4">{entry.invoiceNumber || entry.voucher?.voucherNumber || '—'}</td>
                       <td className="px-6 py-4">{entry.party?.name || '—'}</td>
